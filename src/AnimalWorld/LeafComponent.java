@@ -9,6 +9,10 @@ package AnimalWorld;
 public abstract class LeafComponent implements BodyComponent {
     
     private LeafComponentException except = new LeafComponentException("This leaf has no children");
+    
+    /**
+     * how large the BodyComponent is
+     */
     private int size;
     
     

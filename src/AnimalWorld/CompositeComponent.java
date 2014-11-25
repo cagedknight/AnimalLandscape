@@ -9,7 +9,15 @@ import java.util.LinkedList;
  * @author Thomas Ashborn, David Benoit, Kevin Patraw, Nathan Plante
  */
 public abstract class CompositeComponent implements BodyComponent{
+    
+    /**
+     * list of children of the BodyComponent
+     */
     protected List<BodyComponent> children;
+    
+    /**
+     * how big the BodyComponent is
+     */
     protected int size;
     
     public CompositeComponent(int tempSize){

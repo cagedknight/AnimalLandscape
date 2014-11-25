@@ -7,21 +7,83 @@ package AnimalWorld;
  */
 public abstract class Animal implements Organism {
 
+    /**
+     * what the animal eats: Herbivore, Carnivore, Omnivore
+     */
     protected EatingStrategy eatingStrat;
+    
+    /**
+     * how the animal moves: Fight, Flight, Burrow, Random
+     */
     protected MovementStrategy moveStrat;
+    
+    /**
+     * how the animal breeds
+     */
     protected OutCrossing outCrossingStrat;
-    protected int size;  //the higher the number the bigger the animal
-    protected int movementSpeed;   //number is how many squared that the animal can move
-    protected int[] position;    //array of size 2, with 0 being the x coord and 1 being the y
-    protected boolean isCannibal;  //0 is not a cannibal, 1 is a cannibal
-    protected boolean canEatLarger; //0 can not eat larger creatures, 1 can eat larger
-    protected String name;    //the name of this Animal
-    protected int gender; //0 is a female, 1 is male
+    
+    /**
+     * the higher the number the bigger the animal
+     */
+    protected int size;
+    
+    /**
+     * number is how many squared that the animal can move
+     */
+    protected int movementSpeed;
+    
+    /**
+     * array of size 2, with 0 being the x coordinate and 1 being the y coordinate
+     */
+    protected int[] position;
+    
+    /**
+     * 0 is not a cannibal, 1 is a cannibal
+     */
+    protected boolean isCannibal;
+    
+    /**
+     * 0 can not eat larger creatures, 1 can eat larger
+     */
+    protected boolean canEatLarger;
+    
+    /**
+     * the name of this Animal
+     */
+    protected String name;
+    
+    /**
+     * 0 is a female, 1 is male
+     */
+    protected int gender;
+    
+    /**
+     * the body parts that make up the Animal
+     */
     protected BodyComponent body;
+    
+    /**
+     * how much damage the Animal can deal
+     */
     protected int damageConstant;
+    
+    /**
+     * how much damage the Animal can take
+     */
     protected int damageCapacity;
+    
+    /**
+     * how much damage the Animal has taken
+     */
     protected int markedDamage;
 
+    /**
+     * Animal constructor
+     * 
+     * @param aniName      The name of the animal
+     * @param attributes   The x,y position of the Animal
+     * @param initialBody  The starting body of the animal
+     */
     public Animal(String aniName, int[] attributes, BodyComponent initialBody) {
         position = new int[2];
         position[0] = attributes[0];
@@ -58,15 +120,27 @@ public abstract class Animal implements Organism {
 
     }
 
+    /**
+     * Checks to see if the animal ate this turn
+     * 
+     * @return returns 0 if it failed to eat this turn and 1 if it did eat this turn
+     */
     int eat() //returns 0 if it did not eat and 1 if it did eat
     {
         return 0;
     }
 
+    /**
+     * Moves the Animal towards its current objective
+     * 
+     */
     void move() {
 
     }
 
+    /**
+     * Goes through the sequence of events that make up a turn
+     */
     void takeTurn() {
 
     }

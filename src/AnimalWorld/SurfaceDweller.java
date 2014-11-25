@@ -13,6 +13,12 @@ public class SurfaceDweller extends Animal
 
     }
 
+    /**
+     * the animal will attempt to hide at the end of its turn
+     * this reduces it chance to be seen by other animals
+     * 
+     * @return returns 1 if it successfully hid and 0 if it failed to hide
+     */
     @Override
     int hide() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

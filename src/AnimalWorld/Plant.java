@@ -6,6 +6,10 @@ package AnimalWorld;
  * @author Thomas Ashborn, David Benoit, Kevin Patraw, Nathan Plante
  */
 public abstract class Plant implements Organism{
+    
+    /**
+     * stores the x,y position of the Plant
+     */
     protected int[] position;
     
     @Override

@@ -26,6 +26,11 @@ public class Board<T extends Organism>{
         generateLandscape();
     }
     
+    /**
+     * adds an Organism to the board
+     * 
+     * @param org the Organism being added
+     */
     public void addActor(T org){
         try{
             int[] tempLoc = findClosest(null, org.getX(), org.getY());
@@ -37,6 +42,15 @@ public class Board<T extends Organism>{
         }
     }
     
+    /**
+     * finds the closest Organism on the board
+     * 
+     * @param org the initial Organism
+     * @param x the x position of the initial Organism
+     * @param y the y position of the initial Organism
+     * @return the closest Organism
+     * @throws BadLocationException 
+     */
     public int[] findClosest(T org, int x, int y) throws BadLocationException{
         if(organisms[x][y].contains(org))
             return new int[]{x,y};
@@ -174,6 +188,9 @@ public class Board<T extends Organism>{
         throw new BadLocationException("Your animal is bad and should feel bad");
     }
     
+    /**
+     * creates the landscape for the game board
+     */
     private void generateLandscape(){
         landscape = new LandType[organisms.length][organisms[0].length];
         int shalWater = 0, medWater = 0, deepWater = 0, rock = 0, boulder = 0, lava = 0;
@@ -383,6 +400,13 @@ public class Board<T extends Organism>{
         }
     }
     
+    /**
+     * tests adjacent tiles to determine what LandType the current tile should be
+     * 
+     * @param x the x coordinate of the current tile
+     * @param y the y coordinate of the current tile
+     * @return the land type that will be placed
+     */
     private LandType[] getAdjacentTerrain(int x, int y){
         LandType[] adjacent;
         if(x == 0){
@@ -487,6 +511,9 @@ public class Board<T extends Organism>{
         return landscape[x][y];
     }
     
+    /**
+     * prints out the percentage of each landType present on the board
+     */
     public void printTerrainComposition(){
         int[] temp = new int[4];
         for(int i = 0; i < landscape.length; i++){

@@ -9,6 +9,9 @@ import java.util.Random;
  */
 public class SurfaceFactory implements AnimalFactory{
     
+    /**
+     * random number generator
+     */
     private Random generator;
     
     public SurfaceFactory(){

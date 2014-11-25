@@ -7,6 +7,9 @@ package AnimalWorld;
  */
 public class Omnivore implements EatingStrategy
 {
+    /**
+     * checks to see if the animal ate
+     */
     public void eat(){
     }
 

@@ -11,6 +11,9 @@ public class OutCrossing implements MovementStrategy {
         super();
     }
    
+    /**
+     * moves the animal towards its intended mate if visible
+     */
     public void move(){
         
     }

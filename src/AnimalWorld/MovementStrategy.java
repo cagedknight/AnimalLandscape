@@ -7,5 +7,8 @@ package AnimalWorld;
  */
 public interface MovementStrategy
 {
+    /**
+     * Moves the animal towards its current objective
+     */
     public void move();
 }

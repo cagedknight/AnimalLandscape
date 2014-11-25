@@ -12,7 +12,9 @@ public class RandomMovement implements MovementStrategy
     {
 
     }
-    
+    /**
+     * moves the animal randomly
+     */
     public void move(){
     }
 
