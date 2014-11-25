@@ -1,14 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package AnimalWorld;
 
 /**
+ * OutCrossing is a MovementStrategy where the Animal will look for
+ *         another animal to breed with and move towards that animal
  *
- * @author davidbenoit
+ * @author Thomas Ashborn, David Benoit, Kevin Patraw, Nathan Plante
  */
 public class OutCrossing implements MovementStrategy {
     public OutCrossing(){

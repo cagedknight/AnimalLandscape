@@ -1,15 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package AnimalWorld;
 
 import java.awt.Color;
 
 /**
+ * LandType is what each tile of the board is made of
  *
- * @author Nate
+ * @author Thomas Ashborn, David Benoit, Kevin Patraw, Nathan Plante
  */
 public class LandType {
     

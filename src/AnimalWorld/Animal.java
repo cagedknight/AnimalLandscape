@@ -1,8 +1,6 @@
 package AnimalWorld;
 
 /**
- *
- *
  * Animal is the parent class of all creatures: Mammal
  *
  * @author Thomas Ashborn, David Benoit, Kevin Patraw, Nathan Plante

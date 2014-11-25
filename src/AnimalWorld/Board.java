@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package AnimalWorld;
 
 import java.util.List;
@@ -11,6 +6,11 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.Random;
 
+/**
+ * Board is where the game will take place
+ *
+ * @author Thomas Ashborn, David Benoit, Kevin Patraw, Nathan Plante
+ */
 public class Board<T extends Organism>{
     
     private List<T> animalList;

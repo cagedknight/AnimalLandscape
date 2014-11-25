@@ -1,15 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package AnimalWorld;
 
 import java.util.Random;
 
 /**
+ * SurfaceFactory is an AnimalFactory to create SurfaceDwellers
  *
- * @author Nate
+ * @author Thomas Ashborn, David Benoit, Kevin Patraw, Nathan Plante
  */
 public class SurfaceFactory implements AnimalFactory{
     

@@ -1,14 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package AnimalWorld;
 
 /**
+ * LeafComponent is a part of the composite Animal
+ *         LeafComponents have no other Components attached to them
  *
- * @author davidbenoit
+ * @author Thomas Ashborn, David Benoit, Kevin Patraw, Nathan Plante
  */
 public abstract class LeafComponent implements BodyComponent {
     

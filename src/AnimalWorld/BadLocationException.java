@@ -1,13 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package AnimalWorld;
 
 /**
+ * BadLocationException is the exception thrown when a location is
+ *         out of bounds of the Board
  *
- * @author Nate
+ * @author Thomas Ashborn, David Benoit, Kevin Patraw, Nathan Plante
  */
 public class BadLocationException extends Exception{
     public BadLocationException(String s){
